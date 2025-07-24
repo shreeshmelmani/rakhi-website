@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise Video for Dumbo 🎥</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('rakhi-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 850px;
+      box-shadow: 0 0 20px #ffd166;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ffdd99;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    video {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #06d6a0;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #048f7b;
+    }
+
+    .diya {
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      width: 80px;
+      animation: floatUp 5s infinite ease-in-out;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>For You, My Dumbo 💗</h1>
+    <p>Here’s something straight from my heart — just press play and feel my love, laughs, and memories through every second.</p>
+
+    <!-- OPTION 1: Local video file -->
+    <video controls>
+      <source src="dumbo-surprise.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- OPTION 2: YouTube Embed (Uncomment below and remove the <video> above if needed) -->
+    <!--
+    <iframe src="https://www.youtube.com/embed/vE0HbUn56aE?autoplay=1&controls=1" allowfullscreen></iframe>
+    -->
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <img src="diya.png" class="diya" alt="Diya" />
+  </div>
+</body>
+</html>
