@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I’m There for You 💝</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading-screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 999;
+      animation: fadeOut 2s ease 3s forwards;
+    }
+
+    .loading-text {
+      font-size: 1.8em;
+      color: #d32f2f;
+      font-weight: bold;
+      text-align: center;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+
+    .container.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .gif_container img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 135, 0.4);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ff6b6b;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e63946;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loader">
+    <div class="loading-text">I knew you would press the I Promise button... 💖</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container" id="main">
+    <h1>I’m Always There for You ❤️</h1>
+    <p>
+      No matter the time, the place, or the mood —<br>
+      I'll always be by your side, Dumbo. Forever and ever 💫
+    </p>
+    <div class="gif_container">
+      <img src="https://media4.giphy.com/media/9XY4f3FgFTT4QlaYqa/giphy.gif" alt="Hug GIF">
+    </div>
+    <a href="index.html" class="btn">Back to Rakhi Page</a>
+  </div>
+
+  <!-- JavaScript to trigger content -->
+  <script>
+    setTimeout(() => {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('main').classList.add('show');
+    }, 4000); // wait 4 seconds before showing the content
+  </script>
+
+</body>
+</html>

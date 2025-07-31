@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Bandhan Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .back-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      z-index: 100;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .back-btn:hover {
+      background: #e63946;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn">← Back</a>
+
+  <div id='puz_box'>
+    <div id='puz'>
+      <i class='first' ondrop='drop(event)' ondragover='allowDrop(event)' ></i>
+      <i class='secon' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='third' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='fourt' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='fifth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='sixth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='seven' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='eight' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+      <i class='ninth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+    </div>
+    <div id='puzz'>
+      <i class='third' draggable='true' ondragstart='drag(event)'></i>
+      <i class='first' draggable='true' ondragstart='drag(event)'></i>
+      <i class='secon' draggable='true' ondragstart='drag(event)'></i>
+      <i class='fourt' draggable='true' ondragstart='drag(event)'></i>
+      <i class='fifth' draggable='true' ondragstart='drag(event)'></i>
+      <i class='sixth' draggable='true' ondragstart='drag(event)'></i>
+      <i class='seven' draggable='true' ondragstart='drag(event)'></i>
+      <i class='eight' draggable='true' ondragstart='drag(event)'></i>
+      <i class='ninth' draggable='true' ondragstart='drag(event)'></i>  
+    </div>
+  </div>
+  <div id='clicks'>0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

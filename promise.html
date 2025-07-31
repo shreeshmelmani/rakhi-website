@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Promise to You, Dumbo 💖</title>
+  <link rel="stylesheet" href="promise.css">
+  <style>
+    .back-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      z-index: 100;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .back-btn:hover {
+      background: #e63946;
+    }
+
+    body {
+      background-color: #f9e3e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d32f2f;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 1.5em;
+      color: #4caf50;
+      margin-bottom: 40px;
+    }
+
+    .yes-button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .yes-button:hover {
+      background-color: #388e3c;
+    }
+
+    .gif_container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      font-size: 2em;
+      animation: float 3s infinite;
+    }
+
+    .heart:nth-child(1) { top: 20%; left: 30%; animation-duration: 4s; }
+    .heart:nth-child(2) { top: 40%; left: 50%; animation-duration: 6s; }
+    .heart:nth-child(3) { top: 60%; left: 70%; animation-duration: 5s; }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn">← Back</a>
+
+  <div class="container">
+    <h1>My Promise to You, Dumbo 💖</h1>
+    <div class="message">
+      I promise to always be there for you. Through thick and thin, I’ve got your back. 💫
+    </div>
+    <div class="gif_container">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+    </div>
+    <button class="yes-button" onclick="window.location.href='promise_yes.html'">I Promise 💖</button>
+  </div>
+
+  <div class="heart">❤️</div>
+  <div class="heart">💖</div>
+  <div class="heart">💘</div>
+
+</body>
+</html>
